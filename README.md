@@ -11,7 +11,7 @@ After clicking the build icon in Auto Build Marlin, I had two environments that 
 
 I suggest using a program such as [WinMerge (For Windows)](http://winmerge.org) to view the differences between my configuration files and yours.
 
-
+----------------------------------------------------------------------------------------
 8/3/2021 - change Extruder Steps/mm
 configuration.h
 /**
@@ -20,3 +20,8 @@ configuration.h
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
 line 904   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95.8 }
+
+M92 g-code can set the steps per mm in real time. Here is an example with your result for X axis.
+M92 X200.00
+
+---------------------------------------------------------------------------------------------
